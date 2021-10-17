@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutterworldtime/pages/choose_location.dart';
-import 'package:flutterworldtime/pages/loading.dart';
+
+import './pages/choose_location.dart';
+import './pages/loading.dart';
 import 'package:flutterworldtime/pages/home.dart';
 
 void main() {
-  runApp(MaterialApp(
-    initialRoute: '/',
-    routes: {
-      '/': (context) => Loading(),
-      '/home': (context) => Home(),
-      '/location': (context) => ChooseLocation(),
-    },
-  ));
+  runApp(
+    MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Loading(),
+        '/home': (context) => Home(),
+        '/location': (context) => ChooseLocation(),
+      },
+    ),
+  );
 }

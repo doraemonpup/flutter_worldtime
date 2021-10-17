@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterworldtime/services/world_time.dart';
+
+import '../services/world_time.dart';
 
 class ChooseLocation extends StatefulWidget {
   @override
@@ -8,15 +9,106 @@ class ChooseLocation extends StatefulWidget {
 
 class _ChooseLocationState extends State<ChooseLocation> {
   List<WorldTime> locations = [
-    WorldTime(url: 'Europe/London', location: 'London', flag: 'uk.png'),
-    WorldTime(url: 'Europe/Berlin', location: 'Berlin', flag: 'germany.png'),
-    WorldTime(url: 'Europe/Athens', location: 'Athens', flag: 'greece.png'),
-    WorldTime(url: 'Africa/Cairo', location: 'Cairo', flag: 'egypt.png'),
-    WorldTime(url: 'Africa/Nairobi', location: 'Nairobi', flag: 'kenya.png'),
-    WorldTime(url: 'America/Chicago', location: 'Chicago', flag: 'usa.png'),
-    WorldTime(url: 'America/New_York', location: 'New York', flag: 'usa.png'),
-    WorldTime(url: 'Asia/Seoul', location: 'Seoul', flag: 'south_korea.png'),
-    WorldTime(url: 'Asia/Jakarta', location: 'Jakarta', flag: 'indonesia.png'),
+    WorldTime(
+      url: 'America/Argentina/Buenos_Aires',
+      location: 'Buenos Aires',
+      flag: 'images/argentina.png',
+    ),
+    WorldTime(
+      url: 'Australia/Sydney',
+      location: 'Sydney',
+      flag: 'images/australia.png',
+    ),
+    WorldTime(
+      url: 'America/Sao_Paulo',
+      location: 'Rio de Janeiro',
+      flag: 'images/brazil.png',
+    ),
+    WorldTime(
+      url: 'America/Toronto',
+      location: 'Totonto',
+      flag: 'images/canada.png',
+    ),
+    WorldTime(
+      url: 'Africa/Cairo',
+      location: 'Cairo',
+      flag: 'images/egypt.png',
+    ),
+    WorldTime(
+      url: 'Europe/London',
+      location: 'London',
+      flag: 'images/england.png',
+    ),
+    WorldTime(
+      url: 'Europe/Berlin',
+      location: 'Berlin',
+      flag: 'images/germany.png',
+    ),
+    WorldTime(
+      url: 'Europe/Dublin',
+      location: 'Dublin',
+      flag: 'images/ireland.png',
+    ),
+    WorldTime(
+      url: 'Asia/Tokyo',
+      location: 'Tokyo',
+      flag: 'images/japan.png',
+    ),
+    WorldTime(
+      url: 'Europe/Amsterdam',
+      location: 'Amsterdam',
+      flag: 'images/netherlands.png',
+    ),
+    WorldTime(
+      url: 'Asia/Seoul', // south korea capital
+      location: 'Pyongyang',
+      flag: 'images/northkorea.png',
+    ),
+    WorldTime(
+      url: 'Europe/Oslo',
+      location: 'Oslo',
+      flag: 'images/norway.png',
+    ),
+    WorldTime(
+      url: 'Europe/Moscow',
+      location: 'Moscow',
+      flag: 'images/russia.png',
+    ),
+    WorldTime(
+      url: 'Asia/Riyadh',
+      location: 'Riyadh',
+      flag: 'images/saudiarabia.png',
+    ),
+    WorldTime(
+      url: 'Africa/Johannesburg',
+      location: 'Johannesburg',
+      flag: 'images/southafrica.png',
+    ),
+    WorldTime(
+      url: 'Asia/Bangkok',
+      location: 'Bangkok',
+      flag: 'images/thailand.png',
+    ),
+    WorldTime(
+      url: 'Africa/Tunis',
+      location: 'Tunis',
+      flag: 'images/tunisia.png',
+    ),
+    WorldTime(
+      url: 'Europe/Istanbul',
+      location: 'Istanbul',
+      flag: 'images/turkey.png',
+    ),
+    WorldTime(
+      url: 'America/Los_Angeles',
+      location: 'San Francisco',
+      flag: 'images/usa.png',
+    ),
+    WorldTime(
+      url: 'America/New_York',
+      location: 'New York',
+      flag: 'images/usa.png',
+    )
   ];
 
   void updateTime(index) async {

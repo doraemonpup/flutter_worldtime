@@ -10,7 +10,6 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-
     data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;
 
     // set background
@@ -30,9 +29,10 @@ class _HomeState extends State<Home> {
             padding: EdgeInsets.fromLTRB(0, 120.0, 0, 0),
             child: Column(
               children: <Widget>[
-                FlatButton.icon( 
+                TextButton.icon(
                   onPressed: () async {
-                    dynamic result = await Navigator.pushNamed(context, '/location');
+                    dynamic result =
+                        await Navigator.pushNamed(context, '/location');
                     setState(() {
                       data = {
                         'time': result['time'],
@@ -67,10 +67,7 @@ class _HomeState extends State<Home> {
                 SizedBox(height: 20.0),
                 Text(
                   data['time'],
-                  style: TextStyle(
-                    fontSize: 66.0,
-                    color: Colors.white
-                  ),
+                  style: TextStyle(fontSize: 66.0, color: Colors.white),
                 )
               ],
             ),
